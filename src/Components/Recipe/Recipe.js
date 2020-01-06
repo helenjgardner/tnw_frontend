@@ -6,7 +6,9 @@ class Recipe extends React.Component {
         return (
             <div className="Recipe">
                 <div className="image-container">
-                    <img src={this.props.recipe.recipeImage} alt='' width="50" />
+                <a href={this.props.recipe.recipeUrl} rel="noopener" target="_blank" >
+                        <img src={this.props.recipe.recipeImage} alt='' width="50" />  </a>
+                    {/* <img src={this.props.recipe.recipeImage} alt='' width="50" /> */}
                 </div>
                 <h2>{this.props.recipe.recipeTitle}</h2>
                 <div className="Recipe-information">
