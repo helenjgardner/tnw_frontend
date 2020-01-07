@@ -1,7 +1,25 @@
 import React from 'react';
 import './Recipe.css';
+import axios from 'axios';
 
 class Recipe extends React.Component {
+    favIt = (url) => {
+        const fav = {
+          recipeURL: url
+        };
+        axios.post('https://v5zpl2jk91.execute-api.eu-west-2.amazonaws.com/dev/favourite', fav)
+          .then((response) => {
+            console.log('success')
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+      addFav = () => {
+
+        this.favIt(this.props.recipe.recipeUrl)
+      }
+    
     render() {
         return (
             <div className="Recipe">
@@ -12,6 +30,10 @@ class Recipe extends React.Component {
                 {/* helen made url a link */}
                 <div className="Recipe-Url">
                     <a href={this.props.recipe.recipeUrl} target="_blank"> {this.props.recipe.recipeTitle} </a>
+                    <i className="fas fa-star favStar" 
+                       title="Add to Favourites"
+                       onClick={this.addFav}> </i>
+                    
                 </div>
                 {/* old title */}
                 {/* <h2>{this.props.recipe.recipeTitle}</h2> */}
