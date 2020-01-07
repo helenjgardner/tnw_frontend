@@ -1,0 +1,29 @@
+.bg-light {
+    background-color: #CCA353;
+   
+}
+
+
+div .tagNave .navbar {
+    margin: 0;
+    padding: 0;
+    background-color: #CCA353;
+
+  }
+
+h4 {
+    background-color: #CCA353;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+    Geneva, Verdana, sans-serif;
+    font-size: 1.20rem;
+    color: bisque;
+    text-align: left;
+  }
+
+
+  img.logo {
+      width:30px;
+      height:30px;
+  }
+
+  
