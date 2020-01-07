@@ -16,9 +16,9 @@ const NavBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div id="navall" style ={ { backgroundColor: "#CCA353" }} >  
-    <Navbar color="light" light expand="md">
-        <NavbarBrand href="/"><h4><img className= "logo" src={"/bee-icon-21.png"} width="25" height= "20" alt="" />TASTE NOT  WASTE</h4></NavbarBrand>
+    <div id="navbar" style ={ { backgroundColor: "#CCA353" }} >  
+    <Navbar color="" light expand="md">
+        <NavbarBrand href="/"><h4><img className= "logo" src={"/bee-icon-21.png"} width="30" height= "30" alt="" /> TASTE NOT  WASTE</h4></NavbarBrand>
         
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -30,10 +30,10 @@ const NavBar = (props) => {
               <NavLink href="/About">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Receips">Recipes</NavLink>
+              <NavLink href="/Receips">Favourites</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Log In</NavbarText>
+          <NavbarText className="mr_auto">Log In</NavbarText>
         </Collapse>
       </Navbar>
       </div>
