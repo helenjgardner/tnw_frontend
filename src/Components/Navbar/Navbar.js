@@ -12,8 +12,12 @@ import {
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
+
+  // Helen added to add about page
+  const clickAbout = () => {
+    props.aboutFunc('about')
+    }
 
   return (
     <div id="navbar" style ={ { backgroundColor: "#CCA353" }} >  
@@ -27,7 +31,8 @@ const NavBar = (props) => {
               <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/About">About</NavLink>
+               {/* helen put in onclick */}
+               <NavLink onClick={clickAbout}>About</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/Receips">Favourites</NavLink>
