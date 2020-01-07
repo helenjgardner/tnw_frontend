@@ -5,7 +5,9 @@ import axios from 'axios';
 
 import RecipeList from '../RecipeList/RecipeList';
 import SearchBar from '../SearchBar/SearchBar';
-// import Navbar from '../Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import edamam from '../../Utils/edamam';
 
 class App extends React.Component {
@@ -74,10 +76,13 @@ class App extends React.Component {
   //     this.setState({ recipes: response.data.hits });
   //   };  
 
-  render() {
+  
+
+
+render() {
     return (
       <div className="App" >
-        {/* <Navbar /> */}
+        <Navbar NavBar={this.NavBar} />
         <SearchBar searchEdamam={this.searchEdamam} />
         <RecipeList recipes={this.state.recipes} />
       </div >
@@ -86,3 +91,4 @@ class App extends React.Component {
 }
 
 export default App;
+
