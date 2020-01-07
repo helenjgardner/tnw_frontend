@@ -18,6 +18,9 @@ const NavBar = (props) => {
   const clickAbout = () => {
     props.aboutFunc('about')
     }
+    const clickFav = () => {
+      props.favFunc('fav')
+      }
 
   return (
     <div id="navbar" style ={ { backgroundColor: "#CCA353" }} >  
@@ -35,7 +38,7 @@ const NavBar = (props) => {
                <NavLink onClick={clickAbout}>About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Receips">Favourites</NavLink>
+              <NavLink onClick={clickFav}>Favourites</NavLink>
             </NavItem>
           </Nav>
           <NavbarText className="mr_auto">Log In</NavbarText>
