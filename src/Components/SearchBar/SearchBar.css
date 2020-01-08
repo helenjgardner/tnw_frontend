@@ -8,33 +8,42 @@
     height: 25rem;
   }
   
+ 
+  
   .SearchBar-sort-options ul {
     display: flex;
     justify-content: center;
     margin-bottom: 2.22rem;
     color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    font-size: 50px;
   }
-  
   .SearchBar-sort-options li {
     cursor: pointer;
     width: 4.33rem;
     border-bottom: 1px solid #fff;
-    padding: 0 2.58rem .33rem 2.58rem;
+    padding: 0 1.50 rem 1.0rem 0;
+    display: flex;
     line-height: 1.13;
-    text-align: inline;
+    justify-content: center;
     font-weight: 600;
     font-size: .83rem;
     transition: color .25s;
+    
   }
   
   .SearchBar-sort-options li:hover {
     color: #d4cfcf;
+    
+   
   }
   
   .SearchBar-sort-options li.active,
   .SearchBar-sort-options li.active:hover {
     border-bottom: 1px solid #f0c36c;
     color: #f0c36c;
+    display: inline;
   }
   
   .SearchBar-fields {
@@ -95,3 +104,8 @@
       margin-bottom: .86rem;
     }
   }
+    li {
+      display: inline;
+      font-size: "30px";
+      font-weight: 400;
+    }
