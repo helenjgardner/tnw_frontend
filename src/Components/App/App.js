@@ -9,6 +9,7 @@ import Navbar from '../Navbar/Navbar';
 import About from '../Navbar/About';
 import Favourite from '../Navbar/Favourite';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '../Footer/Footer';
 
 // import edamam from '../../Utils/edamam';
 
@@ -86,6 +87,7 @@ class App extends React.Component {
           <Navbar NavBar={this.NavBar} aboutFunc={this.clickAbout} favFunc={this.clickFav}/>
           <SearchBar searchEdamam={this.searchEdamam} />
           <RecipeList recipes={this.state.recipes} />
+          <Footer />
         </div >
       );
     }

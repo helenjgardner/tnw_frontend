@@ -76,7 +76,7 @@ render() {
                     onChange={this.changeExcluded} 
                 />
             </div>
-            <div className="SearchBar-sort-options">
+            <div className="SearchBar-sort-options" >
                 <ul>
                     {this.renderSortByOptions()}
                 </ul>
