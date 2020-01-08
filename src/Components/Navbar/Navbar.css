@@ -33,7 +33,18 @@ h1 {
     font-display: bold;
   }
 
+.aboutpage{
+ 
+  padding-left: 50px;
+  padding-right: 70px;
+  margin-right: 30px;
+  margin-left: 30px;
+    
+}
 
+.aboutpage h4 {
+  font-display: center;
+}
   /*
   style={{ fontSize: "30px", fontWeight: "30px"}}
   width="30" height= "30"
