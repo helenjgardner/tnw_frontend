@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-
-
 import RecipeList from '../RecipeList/RecipeList';
 import SearchBar from '../SearchBar/SearchBar';
 import Navbar from '../Navbar/Navbar';
@@ -11,22 +9,19 @@ import Favourite from '../Navbar/Favourite';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../Footer/Footer';
 
-// import edamam from '../../Utils/edamam';
-
 class App extends React.Component {
+  // page is the path the nav bar wants to display
   state = {
     recipes: [],
     page: 'search',
     favs: []
   };
-  // page is the path the nav bar wants to display
+
 
   searchEdamam = (ingredient, excluded, sortBy) => {
     let healthValue = '';
-
     if (sortBy === 'low-fat') healthValue = '&diet=low-fat';
     else if (sortBy) healthValue = '&health=' + sortBy;
-
 
     // no of results returned from search - default is 10
     let maxResults = 6;
@@ -65,26 +60,22 @@ class App extends React.Component {
   clickFav = (pageVal) => {
     this.setState({ page: pageVal });
     axios.get('https://v5zpl2jk91.execute-api.eu-west-2.amazonaws.com/dev/favourite')
-        .then((response) => {
-          // handle success   
-          this.setState({favs:response.data.favourite})
-        })
-        .catch(function (error) {
-          // handle error
-          console.log(error);
-        })
-    }
-
-  
-
-
+      .then((response) => {
+        // handle success   
+        this.setState({ favs: response.data.favourite })
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+  }
 
   render() {
     // render normal search stuff
     if (this.state.page === 'search') {
       return (
         <div className="App" >
-          <Navbar NavBar={this.NavBar} aboutFunc={this.clickAbout} favFunc={this.clickFav}/>
+          <Navbar NavBar={this.NavBar} aboutFunc={this.clickAbout} favFunc={this.clickFav} />
           <SearchBar searchEdamam={this.searchEdamam} />
           <RecipeList recipes={this.state.recipes} />
           <Footer />
@@ -108,10 +99,10 @@ class App extends React.Component {
           <br />
           <h4> Favourite Recipes </h4>
           {this.state.favs.map(item => {
-              return <Favourite key={item.id}
-                favUrl={item.recipeURL}
-              />
-            })}
+            return <Favourite key={item.id}
+              favUrl={item.recipeURL}
+            />
+          })}
         </div >
       )
     }

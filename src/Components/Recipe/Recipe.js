@@ -27,7 +27,6 @@ class Recipe extends React.Component {
                     <a href={this.props.recipe.recipeUrl} rel="noopener" target="_blank" >
                         <img src={this.props.recipe.recipeImage} alt='' width="50" />  </a>
                 </div>
-                {/* helen made url a link */}
                 <div className="Recipe-Url">
                     <a href={this.props.recipe.recipeUrl} target="_blank"> {this.props.recipe.recipeTitle} </a>
                     <i className="fas fa-star favStar" 
@@ -35,9 +34,6 @@ class Recipe extends React.Component {
                        onClick={this.addFav}> </i>
                     
                 </div>
-                {/* old title */}
-                {/* <h2>{this.props.recipe.recipeTitle}</h2> */}
-
                 {/* Helen commented out listing ingredients */}
                 {/* <div className="Recipe-information">
                     <div className="Recipe-Ingredients">
