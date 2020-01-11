@@ -1,8 +1,8 @@
 # TR Bee's Taste Not Waste Application - Frontend
 
-This is the front end of a Todo Application, built throughout the [Tech Returners](https://techreturners.com) Your Journey Into Tech course. It integrates with a backend, available [here](https:).
+This is the front end of a Todo Application, built throughout the [Tech Returners](https://techreturners.com) Your Journey Into Tech course. It integrates with a backend, available [here](https://github.com/TR-Bees/tnw_backend).
 
-The hosted version of the application is available here: [https:/](https:///).
+The hosted version of the application is available here: [https://tr-bees.github.io/tnw_frontend/](https://tr-bees.github.io/tnw_frontend/).
 
 ### Technology Used
 
