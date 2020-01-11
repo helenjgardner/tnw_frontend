@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1de2246e60808c2b5fa67be5e8ae593f",
+    "revision": "2453d12a6b415ee76cf53be88210eac5",
     "url": "/tnw_frontend/index.html"
   },
   {
-    "revision": "d02f2c17c09765dc1366",
+    "revision": "b081eb6bb44737e6ae1a",
     "url": "/tnw_frontend/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "420dbb94f868808aa4d8",
+    "revision": "290c864916c1e2caa46f",
     "url": "/tnw_frontend/static/css/main.dbc98c42.chunk.css"
   },
   {
-    "revision": "d02f2c17c09765dc1366",
-    "url": "/tnw_frontend/static/js/2.c5eec581.chunk.js"
+    "revision": "b081eb6bb44737e6ae1a",
+    "url": "/tnw_frontend/static/js/2.5304f35e.chunk.js"
   },
   {
     "revision": "744b76f766044157687ca8b61b891873",
-    "url": "/tnw_frontend/static/js/2.c5eec581.chunk.js.LICENSE"
+    "url": "/tnw_frontend/static/js/2.5304f35e.chunk.js.LICENSE"
   },
   {
-    "revision": "420dbb94f868808aa4d8",
-    "url": "/tnw_frontend/static/js/main.b4e26ed6.chunk.js"
+    "revision": "290c864916c1e2caa46f",
+    "url": "/tnw_frontend/static/js/main.c953ab7d.chunk.js"
   },
   {
     "revision": "54a98f75a35b76d680b3",
